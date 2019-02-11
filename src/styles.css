@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+
+/**
+ * Font Awesome
+ */
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+/**
+  * Base style
+  */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/**
+  * Typography
+  */
+html,
+body,
+input,
+textarea {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+.site-title {
+	font-size: 2em;
+}
+
+/**
+  * Containers
+  */
+.container {
+	width: 80%;
+	margin: auto;
+	max-width: 1600px;
+}
+
+.flex-outer {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.flex-inner,
+.flex-outer > div {
+	flex: 1 1 auto;
+}
