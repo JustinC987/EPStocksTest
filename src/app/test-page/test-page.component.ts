@@ -11,6 +11,10 @@ export class TestPageComponent implements OnInit {
 	public stock: Stock;
 
 	constructor(public stockService: StockService) {
+		/* this is mock data. This is the stock object being displayed in the ul in the html 
+    //where the div is <div *ngIf="stock"</div>.
+    let stock of stocks is for when you use this.getStocks();
+    */
 		this.stock = {
 			id: 1,
 			name: 'test',
@@ -20,6 +24,7 @@ export class TestPageComponent implements OnInit {
 
 	ngOnInit() {
 		this.getTestStock();
+		// use the function below once you have an endpoint
 		// this.getStocks();
 	}
 	getStocks() {
