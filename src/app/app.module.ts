@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TestPageComponent } from './test-page/test-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDividerModule } from '@angular/material';
 
 @NgModule({
 	declarations: [
@@ -13,7 +15,12 @@ import { TestPageComponent } from './test-page/test-page.component';
 		FooterComponent,
 		TestPageComponent
 	],
-	imports: [ BrowserModule, HttpClientModule ],
+	imports: [
+		BrowserModule,
+		HttpClientModule,
+		BrowserAnimationsModule,
+		MatDividerModule
+	],
 	providers: [],
 	bootstrap: [ AppComponent ]
 })
