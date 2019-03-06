@@ -11,7 +11,7 @@ import { Stock } from './stocks';
 })
 export class StockService {
 	// Put the url to server/tables here
-	private url = 'http://localhost:3000/employees';
+	private url = 'http://localhost:3000/stock';
 
 	constructor(
 		private http: HttpClient,
