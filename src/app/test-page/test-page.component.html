@@ -1,36 +1,121 @@
-<div class="container"> 
-    <p> I am making a get request in the test-page.component.ts file. I am displaying a list with the attributes of whatever object you get back in the query.</p>
-    <p>You gotta go into the stock.ts file and edit the interface to have the correct fields to match the object on the server</p>
-    <p>Once you can get the correct object (right click and inspect the browser, I am logging the get request) you can output it the list I will create in the html</p>
-    <div *ngIf="stocks">
-        <ul *ngFor="let stock of stocks">
-  
-            <!-- Copy this code  below to display data once you retrive it. 
-              I added a div that has an ngIf="stocks" that will only display this list if there is an object 
-            
-              <li>FieldName: {{stock.name}}</li>
-              <li>FieldName: {{stock.price}}</li>
-        
-              I have no idea what the object will look like but you gotta go into the stock.ts and add the correct fields.
-               Match the objecton the server.
-            --> 
-          </ul>
-    </div>
-  
-    <div *ngIf="stock">
-      <p>This is test data. I created this stock object in the test-page-component.ts file.</p>
-      <p>This is to show how the data binding works. You retrive an object, store it in a variable and data bind it</p>
-      <p>Stock has two fields in the interface (you gotta change it to what you need). It has a price and name</p>
-      <p>I run my getTestStock function in the ngOnInit() and retrive my stock object. I can then do stock.fieldName to get the data I need</p>
-      <p>Once you have an endpoint, add it to the stock-service.ts url variable and use the getStock in the test-page-component.ts function instead of the getTestStock</p>
-      <ul>
-        <li>
-          Name: {{stock.name}}
-        </li>
-        <li>
-           Price: {{stock.price}}
-        </li>
-      </ul>
-    </div>
-  </div>
+<div class="container-search"> 
+  <p class="search-label">
+    Search Data
+  </p>
+  <input type="search">
+</div> <br>
+
+<div class="container-tables">
+    <div class="many-tutors">
+          <div class="flex-outer">
+
+              <div class="flex-inner">
+                  <div class="many-tutors-card">
+                    <div class="best-tutors-header">
+                      <h3>Top Gainers</h3>
+                    </div>
+                    <div class="many-tutors-inner">
+                     <div class="flex-outer">
+                       <div class="flex-inner">
+                         <p>stock</p>
+                       </div>
+                       <div class="flex-inner value">
+                         <p class="value">value</p>
+                       </div>
+                     </div>
+                     <mat-divider></mat-divider>
+                     <div class="flex-outer stocks">
+                        <div class="flex-inner">
+                          <p>stock</p>
+                        </div>
+                        <div class="flex-inner value">
+                          <p class="value">value</p>
+                        </div>
+                      </div>
+                      <mat-divider></mat-divider>
+                      <div class="flex-outer stocks">
+                          <div class="flex-inner">
+                            <p>stock</p>
+                          </div>
+                          <div class="flex-inner">
+                            <p class="value">value</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+
+            <div class="flex-inner">
+                <div class="many-tutors-card">
+                  <div class="best-tutors-header">
+                    <h3>Markets</h3>
+                  </div>
+                  <div class="many-tutors-inner">
+                   <div class="flex-outer stocks">
+                     <div class="flex-inner">
+                       <p>stock</p>
+                     </div>
+                     <div class="flex-inner value">
+                       <p class="value">value</p>
+                     </div>
+                   </div>
+                   <mat-divider></mat-divider>
+                   <div class="flex-outer stocks">
+                      <div class="flex-inner">
+                        <p>stock</p>
+                      </div>
+                      <div class="flex-inner value">
+                        <p class="value">value</p>
+                      </div>
+                    </div>
+                    <mat-divider></mat-divider>
+                    <div class="flex-outer stocks">
+                        <div class="flex-inner">
+                          <p>stock</p>
+                        </div>
+                        <div class="flex-inner">
+                          <p class="value">value</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+                <div class="flex-inner">
+                    <div class="many-tutors-card">
+                      <div class="best-tutors-header">
+                        <h3>Top Losers</h3>
+                      </div>
+                      <div class="many-tutors-inner">
+                       <div class="flex-outer stocks">
+                         <div class="flex-inner">
+                           <p>stock</p>
+                         </div>
+                         <div class="flex-inner value">
+                           <p class="value">value</p>
+                         </div>
+                       </div>
+                       <mat-divider></mat-divider>
+                       <div class="flex-outer stocks">
+                          <div class="flex-inner">
+                            <p>stock</p>
+                          </div>
+                          <div class="flex-inner value">
+                            <p class="value">value</p>
+                          </div>
+                        </div>
+                        <mat-divider></mat-divider>
+                        <div class="flex-outer stocks">
+                            <div class="flex-inner">
+                              <p>stock</p>
+                            </div>
+                            <div class="flex-inner">
+                              <p class="value">value</p>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
   
