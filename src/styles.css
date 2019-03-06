@@ -1,13 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+ * Angular Material
+ */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 /**
- * Font Awesome
- */
+	* Font Awesome
+	*/
 @import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
 
 /**
-  * Base style
-  */
+	* Base style
+	*/
 * {
 	box-sizing: border-box;
 }
@@ -19,30 +22,56 @@ body {
 }
 
 /**
-  * Typography
-  */
+	* Typography
+	*/
 html,
 body,
 input,
 textarea {
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	color: #242424;
 }
 
 p {
 	margin-bottom: 1em;
+	line-height: 1.5;
 }
 
 .site-title {
 	font-size: 2em;
 }
 
+.field-description {
+	font-size: small;
+	opacity: 0.9;
+	font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand,
+.site-title {
+	font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
 /**
-  * Containers
-  */
+	* Containers
+	*/
 .container {
-	width: 80%;
+	width: 90%;
 	margin: auto;
-	max-width: 1600px;
 }
 
 .flex-outer {
@@ -52,5 +81,595 @@ p {
 
 .flex-inner,
 .flex-outer > div {
+	flex: 1;
+}
+
+/**
+	* Lists
+	*/
+ul {
+	list-style-image: url(/assets/img/chevron.png);
+}
+
+li {
+	margin-bottom: 0.25em;
+}
+
+/**
+	* Material
+	*/
+mat-menu *,
+mat-select *,
+mat-option *,
+mat-slider *,
+mat-slide-toggle *,
+mat-progress-spinner *,
+mat-progress-spinner-bar *,
+mat-table *,
+mat-paginator *,
+mat-sort *,
+mat-checkbox {
+	box-sizing: content-box;
+}
+
+.mat-table {
+	width: 100%;
+}
+
+.mat-table .mat-header-cell,
+.mat-table .mat-cell {
+	padding-right: 0.5em;
+}
+
+.mat-table i {
+	margin: 0.5em;
+}
+
+.mat-table .fa-address-card {
+	color: gray;
+}
+
+.mat-table .fa-trash-alt {
+	color: red;
+}
+
+.table-scroll-container {
+	overflow: auto;
+}
+
+.table-scroll-container input {
+	min-width: 10em;
+}
+
+.mat-column-select {
+	overflow: initial;
+}
+
+/**
+	* Buttons
+	*/
+button,
+.button {
+	white-space: nowrap;
+
+	padding: 1em 3.5em;
+
+	border: solid 2px grey;
+	border-radius: 4px;
+	color: grey;
+	background-color: transparent;
+
+	font: 400 13.3333px Arial;
+	cursor: pointer;
+}
+
+.button-primary {
+	background-color: grey;
+	color: white;
+}
+
+.button-primary-dark {
+	background-color: darkred;
+	color: white;
+}
+
+.button-secondary {
+	color: grey;
+
+	transition: all 0.2s;
+}
+
+.button-secondary:hover {
+	background-color: grey;
+	color: white;
+}
+
+.button-danger {
+	background-color: red;
+	color: white;
+
+	outline-color: silver;
+	border-color: silver;
+}
+
+a.button {
+	text-decoration: none;
+}
+
+h1 button,
+h1 .button {
+	vertical-align: middle;
+}
+
+/**
+	* Links
+	*/
+a {
+	color: lightgray;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: unset;
+}
+
+/**
+	* Form
+	*/
+label {
+	color: lightgray;
+}
+
+input:not([type=checkbox]),
+input:not([type=radio]),
+textarea,
+select,
+mat-select,
+textarea {
+	display: block;
+
+	width: 100%;
+	max-width: 100%;
+	padding: 1em;
+
+	border: none;
+	border-left: solid 3px;
+	border-radius: 8px;
+	outline: none;
+	box-shadow: 1px 1px black;
+
+	color: lightgray;
+	background-color: white;
+
+	font-size: 0.9em;
+}
+
+textarea {
+	min-height: 140px;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-style: italic;
+	font-size: small;
+}
+
+.mat-form-field-underline {
+	display: none;
+}
+
+.invalid-input-message {
+	color: red;
+}
+
+.invalid-input-message li {
+	list-style: none;
+}
+
+input.ng-invalid,
+textarea.ng-invalid,
+select.ng-invalid,
+mat-select.ng-invalid {
+	color: red;
+	border-color: red;
+	box-shadow: 1px 1px darkred;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+mat-select:focus {
+	color: lightgray;
+	border-color: lightgray;
+	box-shadow: 1px 1px lightblue;
+}
+
+input.ng-valid,
+input.ng-valid:focus,
+textarea.ng-valid,
+textarea.ng-valid:focus,
+select.ng-valid,
+select.ng-valid:focus,
+mat-select.ng-valid,
+mat-select.ng-valid:focus {
+	border-color: green;
+	box-shadow: 1px 1px darkgreen;
+}
+
+mat-slide-toggle .mat-slide-toggle-content {
+	overflow: auto;
+	text-overflow: unset;
+	white-space: normal;
+}
+
+button:disabled {
+	color: grey;
+	border-color: grey;
+
+	cursor: not-allowed;
+}
+
+.error-message-text {
+	font-size: 1.1rem;
+	color: red;
+}
+
+/**
+	* Header / Footer
+	*/
+.header-float {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+#app-header header {
+	background: grey;
+	transition: background-color 0.5s;
+}
+
+#app-header a {
+	color: white;
+}
+
+#app-header.clear:not(.header-bg) header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	background: transparent;
+}
+
+#app-footer footer {
+	background-color: white;
+}
+
+#app-footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+#app-footer .footer-bottom a {
+	color: white;
+}
+
+#app-footer.grey footer {
+	background-color: grey;
+}
+
+/*
+ * Modal Styles
+ */
+.cdk-overlay-dark-backdrop {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+body .mat-dialog-container {
+	padding: 0;
+	min-width: 80vw;
+}
+
+.modal-header {
+	padding: 1em;
+	border-bottom: 1px solid grey;
+}
+
+.modal-header h3 {
+	margin: 0;
+}
+
+.modal-header .close-button {
+	float: right;
+	padding-top: 0.1em;
+
+	text-align: right;
+	color: grey;
+
+	cursor: pointer;
+}
+
+.modal-body {
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+
+	max-height: 80vh;
+
+	padding: 2em;
+}
+
+.modal-body h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.modal-body p {
+	color: grey;
+}
+
+.modal-footer {
+	padding: 1em;
+
+	text-align: right;
+
+	border-top: 1px solid grey;
+}
+
+.modal-footer button {
+	margin-left: 0.5em;
+}
+
+/**
+	* Progress indicators
+	*/
+mat-progress-bar {
+	max-height: 2px;
+	z-index: 2001;
+}
+
+.loading-overlay,
+.success-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.loading-overlay mat-spinner,
+.success-overlay i {
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 50px);
+}
+
+.success-overlay i {
+	font-size: 100px;
+	color: green;
+	text-shadow: darkgreen;
+}
+
+/**
+	* Cards
+	*/
+.tutor-card {
+	margin-top: 4em;
+}
+
+.tutor-card p {
+	line-height: 1;
+}
+
+.card-body h2 {
+	margin: 0;
+
+	color: grey;
+	font-weight: lighter;
+	font-size: 2em;
+}
+
+.tutor-card .card-body {
 	flex: 1 1 auto;
+	padding: 1em;
+	padding-top: 2em;
+	padding-left: 2em;
+
+	margin: 1em;
+	margin-left: 0;
+	margin-right: 0;
+
+	background-color: whitesmoke;
+
+	border: solid 1px grey;
+	border-radius: 0 0 5px 5px;
+
+	-webkit-box-shadow: 0px 3px 6px 0px black;
+	-moz-box-shadow: 0px 3px 6px 0px black;
+	box-shadow: 0px 3px 6px 0px black;
+}
+
+.tutor-card .thumbnail {
+	position: relative;
+	z-index: 10;
+	border: solid 1px lightgray;
+
+	-webkit-box-shadow: 0px 3px 6px 0px black;
+	-moz-box-shadow: 0px 3px 6px 0px black;
+	box-shadow: 0px 3px 6px 0px black;
+}
+
+.tutor-card .thumbnail,
+.tutor-card .thumbnail img {
+	max-width: 450px;
+	max-height: 450px;
+	border-radius: 8px;
+}
+
+.tutor-price {
+	color: lightgray;
+}
+
+.tutor-price span {
+	font-size: 2em;
+	vertical-align: middle;
+	font-weight: bold;
+	padding-right: 0.5rem;
+	font-style: normal;
+	color: #121212;
+}
+
+.card-body a {
+	text-decoration: none;
+}
+
+.card-body .reviews-wrap {
+	color: grey;
+	font-size: 0.85em;
+}
+
+.card-body .reviews-wrap p {
+	margin: 0;
+}
+
+.card-icons {
+	display: flex;
+}
+
+.card-icons .card-button,
+.tutor-social-icons i {
+	margin: 1em;
+	margin-left: 0;
+	margin-bottom: 0;
+	text-align: center;
+
+	cursor: pointer;
+}
+
+.card-icons .card-button i {
+	padding: 1em;
+	border-radius: 50%;
+
+	-webkit-box-shadow: 1px 1px 5px 0px black;
+	-moz-box-shadow: 1px 1px 5px 0px black;
+	box-shadow: 1px 1px 5px 0px black;
+}
+
+.card-icons .card-button.favorite i {
+	background-color: grey;
+	border: solid 1px grey;
+	color: red;
+}
+
+.card-icons .card-button.favorite.isFavorited i {
+	background-color: red;
+	color: grey;
+}
+
+.card-icons .card-button.message i {
+	background-color: darkgray;
+	border: solid 1px grey;
+	color: white;
+}
+
+.card-icons .card-button.review i {
+	background-color: lightgray;
+	border: solid 1px lightgray;
+	color: white;
+}
+
+.card-icons .card-button p {
+	margin: 0.5em;
+	font-size: 0.85em;
+	color: lightgray;
+}
+
+.card-categories ul {
+	padding-left: 1em;
+	max-height: 300px;
+	overflow: auto;
+}
+
+.card-categories li {
+	margin-bottom: 1em;
+}
+
+/**
+	* Home page overrides
+	*/
+.categories mat-select.category-button .mat-select-trigger {
+	padding: 2em;
+	padding-top: 2.35em;
+}
+
+/**
+	* Auth Pages (Sign in, Sign up, Forgot password)
+	*/
+.auth-pages {
+	display: flex;
+	flex-flow: wrap;
+	min-height: 100vh;
+}
+
+a.auth-page-left {
+	flex: 1;
+
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px black;
+
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center bottom;
+}
+
+.auth-page-right {
+	display: flex;
+	flex: 1;
+
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+
+	background: grey;
+	min-width: 80vw;
+}
+
+.auth-page-left p {
+	padding: 1em;
+}
+
+.auth-page-right form {
+	width: 75%;
+}
+
+/**
+	* Page Single
+	*/
+.footer-image-img img {
+	max-width: 100%;
+	height: auto;
+}
+
+/**
+	* Google maps
+	*/
+.hide-map {
+	display: none;
+}
+
+/**
+	* Mobile
+	*/
+.desktop {
+	display: none;
 }
