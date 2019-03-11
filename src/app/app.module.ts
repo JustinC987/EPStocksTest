@@ -7,19 +7,23 @@ import { FooterComponent } from './footer/footer.component';
 import { TestPageComponent } from './test-page/test-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDividerModule } from '@angular/material';
+import { AppRouterModule } from './app-routing.module';
+import { StockSingleComponent } from './stock-single/stock-single.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		HeaderComponent,
 		FooterComponent,
-		TestPageComponent
+		TestPageComponent,
+		StockSingleComponent
 	],
 	imports: [
 		BrowserModule,
 		HttpClientModule,
 		BrowserAnimationsModule,
-		MatDividerModule
+		MatDividerModule,
+		AppRouterModule
 	],
 	providers: [],
 	bootstrap: [ AppComponent ]

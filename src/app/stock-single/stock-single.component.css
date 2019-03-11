@@ -1,0 +1,24 @@
+.tutor-archive-header {
+	padding: 1em;
+	background-color: white;
+}
+
+select {
+	width: 100%;
+}
+
+.geocode-location {
+	padding: 0 1em;
+}
+
+.search-button {
+	margin-top: 1em;
+}
+
+.tutor-archive-header .flex-outer {
+	align-items: center;
+}
+
+.tutor-card {
+	margin-bottom: 2em;
+}

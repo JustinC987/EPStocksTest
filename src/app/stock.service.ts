@@ -63,6 +63,35 @@ export class StockService {
 			);
 	}
 
+	public getOne(stockId: number): Observable<Stock> {
+		this.handler.showBackgroundLoader();
+
+		return (
+			this.http
+				// Pass options array to here
+				.get<Stock>(this.url, {
+					headers: this.authService.getHeaders(),
+					params: new HttpParams({ fromObject: { id: `${stockId}` } })
+				})
+				.pipe(
+					tap((result) => {
+						this.handler.log('UserService', 'GET user', {
+							stockId: stockId,
+							result: result
+						});
+
+						this.handler.hideBackgroundLoader();
+					}),
+					catchError(
+						this.handler.error<Stock>(
+							'UserService::getOne',
+							`GET ${stockId} failed`
+						)
+					)
+				)
+		);
+	}
+
 	/**
 	 * Update a user
 	 *
