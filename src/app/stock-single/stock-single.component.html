@@ -1,7 +1,27 @@
-
-
-<ul *ngIf="stock">
-  <li>
-    {{stock[0].id}}
-  </li>
-</ul>
+<div class="container">
+    <article *ngIf="stock" class="tutor-card">
+      <div class="flex-outer">
+        <div class="thumbnail flex-inner">
+          <img src="../../assets/imgs/graph-test.png" class="thumbnail-image" height="300" width="300">
+          
+        </div>	
+        <div class="card-body flex-inner">
+          <h2>{{stock[0].symbol}}</h2>
+  
+          <div class="flex-outer">
+            <div class="card-body-inner flex-inner">
+              <h3>Company: {{stock[0].company}}</h3>
+  
+            </div>
+            <div class="flex-inner song-list">
+              <ul>
+                <li>Price: {{stock[0].price}}</li><br>
+                <li>Change: {{stock[0].change}}</li><br>
+              </ul>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
