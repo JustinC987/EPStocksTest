@@ -27,8 +27,56 @@
       </div>
     </article>
     </div>
-    <div class="flex-inner">
+    <div *ngIf="stock" class="flex-inner stock-table">
+        <div class="flex-inner">
+            <div class="many-tutors-card">
+              <div class="best-tutors-header">
+                <h3>{{stock[0].symbol}} Data</h3>
+              </div>
+              <div class="many-tutors-inner">
+                   <p>{{stock[0].mockData1}}</p>
+                   <mat-divider></mat-divider>
+                   <p>{{stock[0].mockData2}}</p>
+                   <mat-divider></mat-divider>
+                   <p>{{stock[0].mockData3}}</p>
+                   <mat-divider></mat-divider>
+                   <p>{{stock[0].mockData3}}</p>
+                   <mat-divider></mat-divider>
+                   <p>{{stock[0].mockData3}}</p>
+                   <mat-divider></mat-divider>
+                   <p>{{stock[0].mockData3}}</p>
+                   <mat-divider></mat-divider>
+                   <p>{{stock[0].mockData3}}</p>
+                   <mat-divider></mat-divider>
+              </div>
+            </div>
+        </div>
       
     </div>
+  </div>
+  <div *ngIf="stock" class="flex-inner stock-table bottom-table">
+      <div class="flex-inner card-bottom">
+          <div class="many-tutors-card">
+            <div class="best-tutors-header">
+              <h3>{{stock[0].symbol}} Data</h3>
+            </div>
+            <div class="many-tutors-inner">
+                 <p>{{stock[0].mockData1}}</p>
+                 <mat-divider></mat-divider>
+                 <p>{{stock[0].mockData2}}</p>
+                 <mat-divider></mat-divider>
+                 <p>{{stock[0].mockData3}}</p>
+                 <mat-divider></mat-divider>
+                 <p>{{stock[0].mockData3}}</p>
+                 <mat-divider></mat-divider>
+                 <p>{{stock[0].mockData3}}</p>
+                 <mat-divider></mat-divider>
+                 <p>{{stock[0].mockData3}}</p>
+                 <mat-divider></mat-divider>
+                 <p>{{stock[0].mockData3}}</p>
+                 <mat-divider></mat-divider>
+            </div>
+          </div>
+      </div>
   </div>
 </div>
