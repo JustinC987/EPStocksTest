@@ -11,6 +11,7 @@ import { MatDividerModule } from '@angular/material';
 import { AppRouterModule } from './app-routing.module';
 import { StockSingleComponent } from './stock-single/stock-single.component';
 import { LoginModalComponent } from './login-modal/login-modal.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -27,7 +28,9 @@ import { LoginModalComponent } from './login-modal/login-modal.component';
 		BrowserAnimationsModule,
 		MatDividerModule,
 		AppRouterModule,
-		MatDialogModule
+		MatDialogModule,
+		FormsModule,
+		ReactiveFormsModule
 	],
 	providers: [],
 	bootstrap: [ AppComponent ],
