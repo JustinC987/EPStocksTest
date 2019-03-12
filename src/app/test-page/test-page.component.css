@@ -1,3 +1,7 @@
+.container {
+	height: 100%;
+}
+
 .container-search {
 	width: 50%;
 	margin: auto;
@@ -5,18 +9,26 @@
 }
 
 .search-label {
-	margin-top: 2em;
+	padding-top: 2em;
+	margin-top: 0;
+	text-align: center;
+
 	color: black;
 }
 
 input {
 	margin-bottom: 2em;
+	background-color: #fafafa;
 }
 
 .container-tables {
 	width: 90%;
 	margin: auto;
 	max-width: 1600px;
+}
+
+.many-tutors-inner {
+	background-color: #fafafa;
 }
 
 /*
@@ -75,4 +87,15 @@ input {
 	cursor: pointer;
 
 	background-color: #ff8a80;
+}
+
+/*
+* Stock Tables
+*/
+
+.value {
+	color: #43a047;
+}
+.best-tutors-header {
+	background-color: #212121;
 }

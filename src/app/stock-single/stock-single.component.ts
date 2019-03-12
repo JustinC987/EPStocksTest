@@ -26,7 +26,6 @@ export class StockSingleComponent implements OnInit {
 	displayStock() {
 		this.stockService.getOne(this.with).subscribe((stock) => {
 			this.stock = stock;
-			console.log('Stock: ', this.stock);
 		});
 	}
 }

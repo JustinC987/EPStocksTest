@@ -1,6 +1,9 @@
+.container {
+	margin-bottom: 5em;
+}
 .tutor-archive-header {
 	padding: 1em;
-	background-color: white;
+	background-color: #b0bec5;
 }
 
 select {
@@ -21,4 +24,23 @@ select {
 
 .tutor-card {
 	margin-bottom: 2em;
+}
+
+.tutor-card .thumbnail,
+.tutor-card .thumbnail img {
+	height: 300px;
+	max-width: 300px;
+}
+
+.tutor-card .card-body {
+	flex-wrap: wrap;
+	width: 500px;
+}
+
+h2 {
+	text-align: center;
+}
+
+.flex-outer {
+	flex-flow: nowrap;
 }

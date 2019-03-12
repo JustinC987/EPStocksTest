@@ -1,10 +1,10 @@
 header {
-	color: #aaa1a1;
+	color: #fafafa;
 	background-color: #af2c2c;
 }
 
 a:visited {
-	color: #aaa1a1;
+	color: #fafafa;
 }
 
 .container {
@@ -33,7 +33,7 @@ nav {
 
 nav > a,
 nav .nav-link {
-	color: #aaa1a1;
+	color: #ffffff;
 	margin-left: 2em;
 	cursor: pointer;
 }

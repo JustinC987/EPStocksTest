@@ -1,4 +1,6 @@
 <div class="container">
+  <div class="flex-outer">
+    <div class="flex-inner">
     <article *ngIf="stock" class="tutor-card">
       <div class="flex-outer">
         <div class="thumbnail flex-inner">
@@ -8,7 +10,7 @@
         <div class="card-body flex-inner">
           <h2>{{stock[0].symbol}}</h2>
   
-          <div class="flex-outer">
+          <div class="flex-outer card">
             <div class="card-body-inner flex-inner">
               <h3>Company: {{stock[0].company}}</h3>
   
@@ -24,4 +26,9 @@
         </div>
       </div>
     </article>
+    </div>
+    <div class="flex-inner">
+      
+    </div>
   </div>
+</div>
