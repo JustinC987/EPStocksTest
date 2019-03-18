@@ -12,6 +12,7 @@ import { AppRouterModule } from './app-routing.module';
 import { StockSingleComponent } from './stock-single/stock-single.component';
 import { LoginModalComponent } from './login-modal/login-modal.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MarketsDataComponent } from './markets-data/markets-data.component';
 
 @NgModule({
 	declarations: [
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 		FooterComponent,
 		TestPageComponent,
 		StockSingleComponent,
-		LoginModalComponent
+		LoginModalComponent,
+		MarketsDataComponent
 	],
 	imports: [
 		BrowserModule,
