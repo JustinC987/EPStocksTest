@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 import { HandlerService } from './handler.service';
 import { AuthService } from '../app/auth.service';
 import { Stock } from './stocks';
+
 @Injectable({
 	providedIn: 'root'
 })

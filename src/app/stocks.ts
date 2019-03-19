@@ -1,11 +1,17 @@
 export interface Stock {
-	/* 
-	Add the fields here. Below is an example of what an employee object 
-	interface would look like
-
-	id?: number;
-	fname?: string;
-	lname?: string;
-	email?: string;
-	phoneNumber?: string; */
+  symbol: string;
+  company: string;
+  close: number;
+  lastTradeDate: string;
+  lastTradeTime: string;
+  change: number;
+  percentChange: number;
+  volume: number;
+  averageDailyVol: number;
+  /*
+  fi: $scope.data.Chart.Fi,
+  instrument: $scope.data.Quotes.instrument,
+  chart: $scope.data.Chart,
+  chartVisible: false
+  */
 }
