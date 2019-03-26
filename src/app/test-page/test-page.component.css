@@ -1,0 +1,101 @@
+.container {
+	height: 100%;
+}
+
+.container-search {
+	width: 50%;
+	margin: auto;
+	max-width: 1600px;
+}
+
+.search-label {
+	padding-top: 2em;
+	margin-top: 0;
+	text-align: center;
+
+	color: black;
+}
+
+input {
+	margin-bottom: 2em;
+	background-color: #fafafa;
+}
+
+.container-tables {
+	width: 90%;
+	margin: auto;
+	max-width: 1600px;
+}
+
+.many-tutors-inner {
+	background-color: #fafafa;
+}
+
+/*
+* Stock Card
+*/
+
+.many-tutors {
+	padding: 0;
+	margin-bottom: 2em;
+}
+
+.many-tutors img {
+	min-width: 40%;
+}
+
+.many-tutors-inner {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.many-tutors-card {
+	margin-right: 1em;
+	border: solid 1px lightgrey;
+	border-radius: 5px;
+}
+
+.best-tutors-header {
+	padding: 0.25em;
+	text-align: center;
+	background-color: darkgrey;
+	color: white;
+}
+
+.many-tutors-card ul,
+.many-tutors-card li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.many-tutors-card-list li {
+	margin: 1em;
+	padding-bottom: 0.5em;
+}
+
+.many-tutors-card button {
+	width: 100%;
+	margin-top: 1em;
+}
+
+.value {
+	text-align: right;
+}
+
+.many-tutors-inner:hover {
+	cursor: pointer;
+
+	background-color: #ff8a80;
+}
+
+/*
+* Stock Tables
+*/
+
+.value {
+	color: #43a047;
+}
+.best-tutors-header {
+	background-color: #212121;
+}
