@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+<<<<<<< HEAD
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material';
 import { AppComponent } from './app.component';
@@ -36,5 +37,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 	bootstrap: [ AppComponent ],
 	exports: [ MatDialogModule ],
 	entryComponents: [ LoginModalComponent ]
+=======
+
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
+@NgModule({
+	declarations: [ AppComponent, HeaderComponent, FooterComponent ],
+	imports: [ BrowserModule ],
+	providers: [],
+	bootstrap: [ AppComponent ]
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 })
 export class AppModule {}

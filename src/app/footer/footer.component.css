@@ -1,17 +1,29 @@
 footer {
+<<<<<<< HEAD
 	color: #fafafa;
+=======
+	color: #aaa1a1;
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 	border-top: solid 1px #aaa1a1;
 }
 
 .footer-style {
 	position: relative;
+<<<<<<< HEAD
+=======
+	background-color: #aaa1a1;
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 }
 
 .brand {
 	padding: 1rem 0;
 	font-size: 1.73rem;
 	text-decoration: none;
+<<<<<<< HEAD
 	color: #757575;
+=======
+	color: black;
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 }
 
 .brand:hover {
@@ -28,7 +40,13 @@ footer {
 
 	padding: 1.6rem;
 	text-align: center;
+<<<<<<< HEAD
 	color: #757575;
+=======
+
+	background-color: black;
+	color: #aaa1a1;
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 
 	border: none;
 
@@ -37,5 +55,9 @@ footer {
 }
 
 .upArrowBtn:hover {
+<<<<<<< HEAD
 	color: #da4e4e;
+=======
+	background-color: #da4e4e;
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 }

@@ -1,7 +1,10 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+<<<<<<< HEAD
     "allowJs": true,
+=======
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
     "outDir": "../out-tsc/app",
     "types": []
   },

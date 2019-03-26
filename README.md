@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<<<<<<< HEAD
+=======
+
+## Getting started
+
+Clone the branch v0.0.1 and run npm i on the project. Run ng-serve --open to serve the web application locally. 
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2

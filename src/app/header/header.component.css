@@ -1,10 +1,18 @@
 header {
+<<<<<<< HEAD
 	color: #fafafa;
+=======
+	color: #aaa1a1;
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 	background-color: #af2c2c;
 }
 
 a:visited {
+<<<<<<< HEAD
 	color: #fafafa;
+=======
+	color: #aaa1a1;
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 }
 
 .container {
@@ -22,7 +30,11 @@ header a {
 }
 
 .brand p {
+<<<<<<< HEAD
 	font-size: 1.5rem;
+=======
+	font-size: 2.5rem;
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 	margin: 1.1rem 0;
 }
 
@@ -33,7 +45,11 @@ nav {
 
 nav > a,
 nav .nav-link {
+<<<<<<< HEAD
 	color: #ffffff;
+=======
+	color: #aaa1a1;
+>>>>>>> 5779cd097d0f7d3c64229788bc1e9a0d8b9915e2
 	margin-left: 2em;
 	cursor: pointer;
 }
